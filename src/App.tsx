@@ -1,10 +1,11 @@
 import { AppLayout } from "./app/layout"
-import { Loader } from "./features/loader"
+import SceneCanvas from "./three/canvas/SceneCanvas"
+
 
 const App = () => {
   return (
     <AppLayout>
-      <Loader />
+      <SceneCanvas />
     </AppLayout>
   )
 }

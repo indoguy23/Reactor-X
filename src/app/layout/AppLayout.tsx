@@ -1,11 +1,13 @@
+import type { ReactNode } from "react";
+
 interface AppLayoutProps {
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
-export function AppLayout({ children }: AppLayoutProps) {
+export const AppLayout = ({ children }: AppLayoutProps) => {
   return (
-    <main className="min-h-screen bg-[var(--color-background)] text-[var(--text-primary)]">
+    <main className="h-screen w-screen overflow-hidden">
       {children}
     </main>
   );
-}
+};
