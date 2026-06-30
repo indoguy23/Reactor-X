@@ -3,8 +3,7 @@ import { Button } from "../../../shared/components/ui/Button";
 
 const HeroButtons = () => {
     return (
-        <div className="flex flex-wrap gap-5">
-
+        <div className="mt-10 flex flex-wrap gap-5">
             <Button>
                 Explore Projects
             </Button>
@@ -12,7 +11,6 @@ const HeroButtons = () => {
             <Button variant="secondary">
                 Download Resume
             </Button>
-
         </div>
     );
 };
