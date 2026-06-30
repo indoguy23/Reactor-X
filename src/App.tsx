@@ -1,10 +1,10 @@
 import { AppLayout } from "./app/layout"
-import { Hero } from "./features/hero"
+import { Loader } from "./features/loader"
 
 const App = () => {
   return (
     <AppLayout>
-      <Hero />
+      <Loader />
     </AppLayout>
   )
 }
