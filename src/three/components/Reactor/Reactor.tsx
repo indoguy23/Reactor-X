@@ -8,10 +8,9 @@ const Reactor = () => {
         <Float
             speed={2}
             rotationIntensity={0.3}
-            floatIntensity={0.6}
+            floatIntensity={0.7}
         >
             <group>
-
                 <ReactorCore />
 
                 <ReactorRing />
@@ -20,7 +19,6 @@ const Reactor = () => {
                     rotation={[Math.PI / 2, 0, 0]}
                     speed={-1}
                 />
-
             </group>
         </Float>
     );

@@ -11,25 +11,25 @@ const ReactorRing = ({
     rotation = [0, 0, 0],
     speed = 1,
 }: ReactorRingProps) => {
-    const ringRef = useRef<Mesh>(null);
+    const meshRef = useRef<Mesh>(null);
 
     useFrame((_, delta) => {
-        if (!ringRef.current) return;
+        if (!meshRef.current) return;
 
-        ringRef.current.rotation.z += delta * speed;
+        meshRef.current.rotation.z += delta * speed;
     });
 
     return (
         <mesh
-            ref={ringRef}
+            ref={meshRef}
             rotation={rotation}
         >
-            <torusGeometry args={[1.5, 0.03, 32, 128]} />
+            <torusGeometry args={[1.4, 0.03, 32, 128]} />
 
             <meshStandardMaterial
-                color="white"
+                color="#ffffff"
                 emissive="#00F5FF"
-                emissiveIntensity={3}
+                emissiveIntensity={4}
             />
         </mesh>
     );

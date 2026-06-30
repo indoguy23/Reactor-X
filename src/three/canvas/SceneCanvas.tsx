@@ -1,11 +1,11 @@
 import { Canvas } from "@react-three/fiber";
-import { World } from "../world/World";
+import World from "../world/World";
 
 const SceneCanvas = () => {
     return (
         <Canvas
             camera={{
-                position: [0, 0, 7],
+                position: [0, 0, 5],
                 fov: 45,
             }}
             dpr={[1, 2]}

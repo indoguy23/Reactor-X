@@ -1,17 +1,18 @@
 import { Reactor } from "../components/Reactor";
 
-export const World = () => {
+const World = () => {
     return (
         <>
             <ambientLight intensity={0.6} />
 
             <directionalLight
-                intensity={2}
                 position={[5, 5, 5]}
+                intensity={2}
             />
 
             <pointLight
-                intensity={30}
+                position={[0, 0, 0]}
+                intensity={25}
                 color="#00F5FF"
             />
 
@@ -19,3 +20,5 @@ export const World = () => {
         </>
     );
 };
+
+export default World;
