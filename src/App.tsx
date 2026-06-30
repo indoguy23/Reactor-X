@@ -1,13 +1,14 @@
-import { AppLayout } from "./app/layout"
-import SceneCanvas from "./three/canvas/SceneCanvas"
-
+import { AppLayout } from "./app/layout";
+import { Button } from "./shared/components/ui/Button";
 
 const App = () => {
   return (
     <AppLayout>
-      <SceneCanvas />
+      <div className="flex h-screen items-center justify-center">
+        <Button>Explore Reactor</Button>
+      </div>
     </AppLayout>
-  )
-}
+  );
+};
 
-export default App
+export default App;

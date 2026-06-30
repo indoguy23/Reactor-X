@@ -1,4 +1,6 @@
+import { CameraRig } from "../camera/CameraRig";
 import ReactorCore from "../components/ReactorCore";
+import { SceneEnvironment } from "../environment/SceneEnvironment";
 
 export const World = () => {
     return (
@@ -10,7 +12,11 @@ export const World = () => {
                 intensity={2}
             />
 
-            <ReactorCore />
+            <SceneEnvironment />
+
+            <CameraRig>
+                <ReactorCore />
+            </CameraRig>
         </>
     );
 };
