@@ -1,22 +1,21 @@
-import { CameraRig } from "../camera/CameraRig";
-import ReactorCore from "../components/ReactorCore";
-import { SceneEnvironment } from "../environment/SceneEnvironment";
+import { Reactor } from "../components/Reactor";
 
 export const World = () => {
     return (
         <>
-            <ambientLight intensity={0.5} />
+            <ambientLight intensity={0.6} />
 
             <directionalLight
-                position={[5, 5, 5]}
                 intensity={2}
+                position={[5, 5, 5]}
             />
 
-            <SceneEnvironment />
+            <pointLight
+                intensity={30}
+                color="#00F5FF"
+            />
 
-            <CameraRig>
-                <ReactorCore />
-            </CameraRig>
+            <Reactor />
         </>
     );
 };

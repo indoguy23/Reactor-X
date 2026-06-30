@@ -1,34 +1,18 @@
-import { Button } from "../../shared/components/ui/Button";
-import { Container } from "../../shared/components/ui/Container";
-import { Heading } from "../../shared/components/ui/Heading";
-
+import HeroContent from "./components/HeroContent";
+import HeroScene from "./components/HeroScene";
 
 const Hero = () => {
     return (
-        <section className="relative flex min-h-screen items-center">
-            <Container>
-                <div className="max-w-3xl">
-                    <Heading
-                        title="Aryan Dewangan"
-                        subtitle="Backend Developer • React • TypeScript • Django • Three.js"
-                    />
+        <section className="relative min-h-screen bg-[#060816]">
 
-                    <p className="mt-8 text-lg leading-8 text-slate-300">
-                        I build modern web applications and immersive digital experiences
-                        with React, TypeScript, Django, PostgreSQL and Three.js.
-                    </p>
+            <div className="mx-auto grid min-h-screen max-w-7xl items-center gap-16 px-6 pt-28 lg:grid-cols-[1.1fr_0.9fr] lg:px-10">
 
-                    <div className="mt-10 flex flex-wrap gap-4">
-                        <Button>
-                            Explore Projects
-                        </Button>
+                <HeroContent />
 
-                        <Button variant="secondary">
-                            Download Resume
-                        </Button>
-                    </div>
-                </div>
-            </Container>
+                <HeroScene />
+
+            </div>
+
         </section>
     );
 };

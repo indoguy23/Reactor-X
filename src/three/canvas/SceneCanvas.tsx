@@ -4,11 +4,11 @@ import { World } from "../world/World";
 const SceneCanvas = () => {
     return (
         <Canvas
-            shadows
             camera={{
-                position: [0, 0, 8],
+                position: [0, 0, 7],
                 fov: 45,
             }}
+            dpr={[1, 2]}
         >
             <color attach="background" args={["#060816"]} />
 
