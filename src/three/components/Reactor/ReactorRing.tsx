@@ -24,12 +24,14 @@ const ReactorRing = ({
             ref={meshRef}
             rotation={rotation}
         >
-            <torusGeometry args={[1.4, 0.03, 32, 128]} />
+            <torusGeometry args={[1.15, 0.045, 48, 180]} />
 
             <meshStandardMaterial
-                color="#ffffff"
+                color="#E8FDFF"
                 emissive="#00F5FF"
-                emissiveIntensity={4}
+                emissiveIntensity={5}
+                metalness={1}
+                roughness={0.05}
             />
         </mesh>
     );
